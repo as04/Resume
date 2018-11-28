@@ -1,0 +1,30 @@
+<div class="top-gap" >
+<div class="gap">
+<div fxLayout="row" fxLayout.xs="column"  fxLayoutWrap fxLayoutGap="0.5%">
+  <div fxFlex="100%" >
+    <mat-card class="ex1">
+      <mat-card-title>{{ dataAbout.title }}</mat-card-title>
+      <mat-card-content  class="top-gap">
+        <div fxLayout="row" fxLayoutWrap>
+          <div fxLayout="column" fxFlex="60%">
+           <p class="size"> {{ dataAbout.content }} </p>
+           <a href="/assets/Anuradha Sharma.pdf" download="AnuradhaResume.pdf">
+             <button mat-raised-button  class="download">
+                Resume
+                 <i class="material-icons">
+                cloud_download
+                </i>
+              </button>
+           </a>
+          </div>
+          <div fxLayout="column" fxFlex="5%">
+          </div>
+          <div fxLayout="column" fxFlex="40%">
+            <img src="/assets/images/Me.jpg">
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+</div>

@@ -1,0 +1,14 @@
+.gap {
+	margin-top: 70px;
+	margin-left: 70px;
+	margin-right: 70px;
+}
+mat-card-title{
+  background-color: #dea438; 
+  text-align: center;
+  font-size: 30px;
+}
+mat-card{
+	min-height: 60vh;
+	min-width: 100%
+}

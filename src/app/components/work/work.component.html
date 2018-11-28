@@ -1,0 +1,43 @@
+<div class="gap" fxFlex="100%" fxShow.lt-md="false" fxShow="true">
+  <section id="timeline">
+    <article  *ngFor = "let i of dataWork;let j = index;">
+      <div class="inner">
+        <span class="date">
+          <span class="day">30<sup>th</sup></span>
+          <span class="month">Jan</span>
+          <span class="year">2014</span>
+        </span>
+          <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ i.title }}
+                </mat-panel-title>
+                <mat-panel-description>
+                  {{ i.profile }} @ {{ i.org }}
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+
+              <p>{{ i.Description }}</p>
+
+            </mat-expansion-panel>
+          </mat-accordion>
+      </div>
+    </article>
+  </section>
+</div>
+
+<div fxFlex="100%" fxShow.lt-md="true" fxShow="false">
+  <mat-card class="card" *ngFor = "let i of dataWork;let j = index;">
+      <mat-card-title>
+        {{ i.title }}
+      </mat-card-title>
+      <mat-card-subtitle>
+        {{ i.profile }} @ {{ i.org }}
+      </mat-card-subtitle>
+      <mat-card-content>
+        <p>{{ i.Description }}</p>
+      </mat-card-content>
+  </mat-card>
+</div>
+

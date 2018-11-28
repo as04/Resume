@@ -1,0 +1,78 @@
+<!-- <div fxShow.gt-sm="true" fxShow="false" >
+  <div class="top-gap"></div>
+</div> -->
+<div class="gap">
+<!-- <div fxLayout="row" fxLayout.xs="column"  fxLayoutWrap fxLayoutGap="0.5%">
+  <div fxFlex="25%" >
+    <mat-card >
+      <mat-card-header>
+        <div mat-card-avatar class="header-image"></div>
+        <mat-card-title>LaShawrma Pi</mat-card-title>
+        <mat-card-subtitle>RPi based IoT project</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="/assets/images/rpi.png" alt="LaShawrma Pi">
+      <mat-card-content>
+      <p> hiss piss miss kiss bliss knees pees leech peach neech keech bheech meech galeech </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div fxFlex="25%" >
+    <mat-card >
+      <mat-card-header></mat-card-header>
+      <i class="material-icons blank-tile" fxLayoutAlign="center">add_circle</i>
+      <mat-card-content></mat-card-content>
+    </mat-card>
+  </div>
+  <div fxFlex="25%" >
+    <mat-card >
+      <mat-card-header></mat-card-header>
+      <i class="material-icons blank-tile" fxLayoutAlign="center">add_circle</i>
+      <mat-card-content></mat-card-content>
+    </mat-card>
+  </div>
+  <div fxFlex="25%" >
+    <mat-card >
+      <mat-card-header></mat-card-header>
+      <i class="material-icons blank-tile" fxLayoutAlign="center">add_circle</i>
+      <mat-card-content></mat-card-content>
+    </mat-card>
+  </div>
+</div> -->
+
+<div  fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" class="flex-container wrap">
+  <div fxFlex="23%" *ngFor="let i of dataProjects">
+    <mat-card>
+      <mat-card-header>
+        <div mat-card-avatar class="header-image"></div>
+        <mat-card-title>{{ i.title }}</mat-card-title>
+        <mat-card-subtitle>{{ i.subtitle }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{ i.photo }}" class="mat-card-image" >
+      <mat-card-content>
+       <p> {{ i.description }} </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+<!--   <div fxFlex="25%" >
+    <mat-card >
+      <mat-card-header></mat-card-header>
+      <i class="material-icons blank-tile" fxLayoutAlign="center">add_circle</i>
+      <mat-card-content></mat-card-content>
+    </mat-card>
+  </div>
+  <div fxFlex="25%">
+    <mat-card >
+      <mat-card-header></mat-card-header>
+      <i class="material-icons blank-tile" fxLayoutAlign="center">add_circle</i>
+      <mat-card-content></mat-card-content>
+    </mat-card>
+  </div>
+  <div fxFlex="25%" >
+    <mat-card >
+      <mat-card-header></mat-card-header>
+      <i class="material-icons blank-tile" fxLayoutAlign="center">add_circle</i>
+      <mat-card-content></mat-card-content>
+    </mat-card>
+  </div> -->
+</div>
+</div>

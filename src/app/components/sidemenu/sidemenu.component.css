@@ -1,0 +1,53 @@
+.sidenav{
+	height: 100vh;
+}
+.cont{
+	/*background-color: #dea438;*/
+	background-image: url("/assets/images/Y3.jpg");
+	text-align: center;
+	position: relative;
+  height: 100%;
+}
+.box{
+	width: 100%;
+	height: 70px;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active{
+    background-color: #b5801e;
+    /*color: white;*/
+}
+
+.box:hover {background-color: #b5801e}
+
+.box span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.box span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.box:hover span {
+  padding-right: 25px;
+}
+
+.box:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+a {
+    color: black;
+}

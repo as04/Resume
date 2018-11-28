@@ -1,0 +1,44 @@
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Shadows+Into+Light" rel="stylesheet">
+<div fxLayout="row wrap">
+  <div fxLayout="column" fxFlex="100%" fxLayoutAlign="stretch" fxShow.lt-md="true" fxShow="false">
+    <button (click)="openBottomSheet()" class="phButton">
+    <i class="material-icons">
+    menu
+    </i>
+    </button>
+  </div>
+  <div fxLayout="column" fxFlex="10%" fxShow.lt-md="false" fxShow="true">
+    <app-sidemenu></app-sidemenu>
+  </div>
+  <div fxLayout="column" fxFlex="90%">
+    <div fxLayout="row">
+      <div fxLayout="column" fxFlex="100%"></div>
+    </div>
+  <!-- <mat-toolbar></mat-toolbar> -->
+  <router-outlet></router-outlet>
+  </div>
+</div>
+
+
+
+
+<!--  <div fxLayout="row">
+  <div fxLayout="column" fxFlex="10%">
+  1-10
+  </div>
+  <div fxLayout="column" fxFlex="90%">
+  1-90
+  </div>
+</div>
+
+
+ <div fxLayout="row">
+  <div fxLayout="column" fxFlex="10%">
+  2-10
+  </div>
+  <div fxLayout="column" fxFlex="90%">
+  2-90
+  </div>
+</div>
+ -->
+

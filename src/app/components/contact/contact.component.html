@@ -1,0 +1,66 @@
+<div class="gap">
+<!-- <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+  {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+</button> -->
+<!--   <div fxLayout="column" fxFlex="100%" fxLayoutAlign="stretch" fxShow.lt-md="true" fxShow="false">
+  </div> -->
+
+
+<div  fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" class="flex-container wrap ">
+ 
+<div fxFlex="50%" fxShow.lt-md="false" fxShow="true">
+  <mat-card>
+    <mat-card-title>
+    Send a Feedback:
+    </mat-card-title>
+    <mat-card-content>
+      <mat-vertical-stepper [linear]="isLinear" #stepper>
+        <mat-step [stepControl]="firstFormGroup">
+          <form [formGroup]="firstFormGroup">
+            <ng-template matStepLabel>Fill out your name</ng-template>
+            <mat-form-field>
+              <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+            </mat-form-field>
+            <div>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup">
+          <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel>Your message</ng-template>
+            <mat-form-field>
+              <input matInput placeholder="Message" formControlName="secondCtrl" required>
+            </mat-form-field>
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Done</ng-template>
+          You are now done.
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button (click)="stepper.reset()">Reset</button>
+          </div>
+        </mat-step>
+      </mat-vertical-stepper>
+    </mat-card-content>
+  </mat-card>
+</div>
+<div fxFlex=5%></div>
+<div fxFlex=50%>
+<mat-card>
+<mat-card-title>
+Contact Details:
+</mat-card-title>
+<mat-card-content>
+email: anuradha.sharma.nit@gmail.com
+<br>
+email: radhaanu@hotmail.co.uk
+</mat-card-content>
+</mat-card>
+</div>
+</div>
