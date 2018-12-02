@@ -41,17 +41,19 @@
 
 <div  fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" class="flex-container wrap">
   <div fxFlex="23%" *ngFor="let i of dataProjects">
+  <a href="{{i.link}}" target="_blank" class="project_tiles">
     <mat-card>
       <mat-card-header>
         <div mat-card-avatar class="header-image"></div>
-        <mat-card-title>{{ i.title }}</mat-card-title>
-        <mat-card-subtitle>{{ i.subtitle }}</mat-card-subtitle>
+        <mat-card-title><u>{{ i.title }}</u></mat-card-title>
+        <mat-card-subtitle><i><small>{{ i.subtitle }}</small></i></mat-card-subtitle>
       </mat-card-header>
       <img mat-card-image src="{{ i.photo }}" class="mat-card-image" >
       <mat-card-content>
-       <p> {{ i.description }} </p>
+       <p><small><strong> {{ i.description }} </strong></small></p>
       </mat-card-content>
     </mat-card>
+  </a>
   </div>
 <!--   <div fxFlex="25%" >
     <mat-card >

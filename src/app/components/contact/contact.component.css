@@ -12,3 +12,6 @@ mat-card{
 	min-height: 60vh;
 	min-width: 100%
 }
+.nav-text{
+	vertical-align: super;
+}

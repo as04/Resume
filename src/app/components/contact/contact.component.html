@@ -8,6 +8,36 @@
 
 <div  fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" class="flex-container wrap ">
  
+ <div fxFlex=50%>
+<mat-card>
+    <mat-card-title>
+    Contact Details:
+    </mat-card-title>
+    <mat-card-content>
+    <table>
+      <tbody>
+        <tr>
+          <td>Email: </td>
+          <td><a href="mailto:inbox2anuradha@gmail.com">inbox2anuradha@gmail.com</a></td>
+        </tr>
+        <tr>
+          <td>Github: </td>
+          <td><a href="https://github.com/as04">as04</a></td>
+        </tr>
+        <tr>
+          <td>LinkedIn: </td>
+          <td><a href="https://www.linkedin.com/in/as-04">as-04</a></td>
+        </tr>
+        <tr>
+          <td>Blog: </td>
+          <td><a href="https://as04learning.wordpress.com">as04learning</a></td>
+        </tr>
+      </tbody>
+    </table>
+    </mat-card-content>
+</mat-card>
+</div>
+<div fxFlex=5%></div>
 <div fxFlex="50%" fxShow.lt-md="false" fxShow="true">
   <mat-card>
     <mat-card-title>
@@ -39,28 +69,15 @@
           </form>
         </mat-step>
         <mat-step>
-          <ng-template matStepLabel>Done</ng-template>
-          You are now done.
+          <ng-template matStepLabel>Send</ng-template>
           <div>
             <button mat-button matStepperPrevious>Back</button>
             <button mat-button (click)="stepper.reset()">Reset</button>
+            <button mat-button >Send</button>
           </div>
         </mat-step>
       </mat-vertical-stepper>
     </mat-card-content>
   </mat-card>
-</div>
-<div fxFlex=5%></div>
-<div fxFlex=50%>
-<mat-card>
-<mat-card-title>
-Contact Details:
-</mat-card-title>
-<mat-card-content>
-email: anuradha.sharma.nit@gmail.com
-<br>
-email: radhaanu@hotmail.co.uk
-</mat-card-content>
-</mat-card>
 </div>
 </div>

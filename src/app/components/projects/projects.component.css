@@ -1,3 +1,6 @@
+.project_tiles{
+  text-decoration: none;
+}
 .gap {
 	margin-top: 10px;
 	margin-left: 20px;
@@ -37,4 +40,7 @@ mat-card {
 .wrap    {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-}  
+} 
+mat-card-title{
+  font-family: 'Shadows Into Light';
+} 
